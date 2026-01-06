@@ -1,6 +1,7 @@
 import React from "react";
 
 const Card = (props) => {
+  console.log(props);
   return (
   <div className="w-72 bg-slate-900 border border-emerald-900/60 rounded-2xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden">
   
