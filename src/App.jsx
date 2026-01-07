@@ -11,11 +11,6 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Navbar2 from './pages/Navbar2'
 
-
-
-
-
-
 function App() {
 
   const products = [
