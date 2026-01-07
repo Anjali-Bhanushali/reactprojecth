@@ -1,6 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
+
+
 
 const Navbar = () => {
+  
   return (
      <nav className="flex items-center justify-between px-10 py-4 bg-emerald-950 text-white">
       {/* Logo */}
@@ -8,10 +13,10 @@ const Navbar = () => {
 
       {/* Menu */}
       <ul className="flex gap-8 text-lg">
-        <li className="cursor-pointer hover:text-gray-200">Home</li>
-        <li className="cursor-pointer hover:text-gray-200">About</li>
-        <li className="cursor-pointer hover:text-gray-200">Projects</li>
-        <li className="cursor-pointer hover:text-gray-200">Contact</li>
+        <Link to="/home">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="/projects">Projects</Link>
+        <Link to="/contact">Contact</Link>
       </ul>
     </nav>
   )

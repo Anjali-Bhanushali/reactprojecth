@@ -35,6 +35,56 @@ ar await wait krwata hai
   }
   <button onClick={fetchData} className='bg-emerald-950'>get data</button>
 
+-useEffect
+by using useEffect we can run the function side by side so the api calling is done automatically and the data is shown.
+
+useEffect is used to run the function agai and again when it's dependencies changes.
+mounting and unmounting ke kaam me aata hai useEffect.
+lifecycle method ke liye.
+
+-useRef
+ dom element ko target krne ke kaam me aata hai
+
+-React toastify(library hai)
+flash messages ko show krne ke liye use hota hai
+
+-Redux Toolkit
+It is a independent library used for state management.
+
+-React Router DOM
+It is an external library which helps in routing in react,
+beacuse react do not have inbuilt routing properties.
+
+main.jsx - Browserouter
+import { BrowserRouter } from 'react-router-dom'
+  <BrowserRouter>
+    <StrictMode>
+      <App />
+    </StrictMode>
+  </BrowserRouter>
+app.jsx - routes,route(path,element)
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Home from './components/Home'
+import About from './components/About'
+import Contact from './components/Contact'
+
+     <div>
+        <Routes>
+          <Route path='/home' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/contact' element={<Contact />} />
+        </Routes>
+      </div>
+navbar.jsx - link(to)
+import { Link } from "react-router-dom";
+        <Link to="/home">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="/projects">Projects</Link>
+        <Link to="/contact">Contact</Link>
+
+
+
+
 
 
 ```

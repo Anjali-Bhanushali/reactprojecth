@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const Card = (props) => {
   console.log(props);
   return (
@@ -32,7 +33,7 @@ const Card = (props) => {
 
     {/* Buttons */}
     <div className="flex gap-2 pt-2">
-      <button className="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white py-2 rounded-lg transition">
+      <button  className="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white py-2 rounded-lg transition">
         Add to Cart
       </button>
 
