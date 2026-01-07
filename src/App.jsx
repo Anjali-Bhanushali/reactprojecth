@@ -1,4 +1,4 @@
-import react, { useEffect, useState } from 'react'
+import react, {createContext, useEffect, useState } from 'react'
 import Header from './components/Header'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
@@ -6,9 +6,13 @@ import Main from './components/Main'
 import Card from './components/Card'
 import axios from 'axios'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Home from './components/Home'
-import About from './components/About'
-import Contact from './components/Contact'
+import Home from './pages/Home'
+import About from './pages/About'
+import Contact from './pages/Contact'
+import Navbar2 from './pages/Navbar2'
+import Usercontext from './context/Usercontext'
+
+
 
 
 
@@ -47,9 +51,11 @@ function App() {
     fetchData();
   }, [])
 
+  const  value = Usercontext(DataContext);
+  console.log(value);
+
   return (
     <>
-
       <Navbar />
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6 bg-slate-950">
         {products.map((products, idx) => (
@@ -78,7 +84,7 @@ function App() {
         })}
         </div>
 
-        {/* <Navbar /> */}
+        <Navbar2 />
         <div>
           <Routes>
           <Route path='/home' element={<Home />} />

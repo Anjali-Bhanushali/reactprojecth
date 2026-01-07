@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 
 
 
-const Navbar = () => {
+const Navbar2 = () => {
   
   return (
      <nav className="flex items-center justify-between px-10 py-4 bg-emerald-950 text-white">
@@ -12,13 +13,13 @@ const Navbar = () => {
 
       {/* Menu */}
       <ul className="flex gap-8 text-lg">
-        <li className="cursor-pointer ">Home</li>
-        <li className="cursor-pointer ">About</li>
-        <li className="cursor-pointer ">Projects</li>
-        <li className="cursor-pointer ">Contact</li>
+        <Link to="/home">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="/projects">Projects</Link>
+        <Link to="/contact">Contact</Link>
       </ul>
     </nav>
   )
 }
 
-export default Navbar;
+export default Navbar2;

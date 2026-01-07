@@ -82,6 +82,11 @@ import { Link } from "react-router-dom";
         <Link to="/projects">Projects</Link>
         <Link to="/contact">Contact</Link>
 
+-Context API
+ context API is used to centralise the data.
+
+ recieve krne ke liye hooks hai (useContext)
+
 
 
 
